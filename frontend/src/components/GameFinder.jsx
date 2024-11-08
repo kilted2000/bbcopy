@@ -97,8 +97,9 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamOne", { pattern: /^[a-z|\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="pl-2"
+              className="rounded-lg"
             />
+              
           <label className="w-1/2 mx-1">
             Team:
             </label>
@@ -106,7 +107,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamTwo", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="pl-2"
+              className="rounded-lg"
             />
           
         </div>
@@ -118,7 +119,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamThree", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="pl-2"
+              className="rounded-lg"
             />
           
           <label className="w-1/2 mx-1">
@@ -128,7 +129,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamFour", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="pl-2"
+              className="rounded-lg"
             />
           
         </div>
