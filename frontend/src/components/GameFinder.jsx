@@ -87,7 +87,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
           console.log("Form submission triggered.");
           handleSubmit(onSubmit)(e);
         }}
-        className="rounded-lg bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat p-4 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto"
+        className="rounded-lg bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat p-14 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto"
       >
   <div>
           <label className="w-1/2 mr-1">
@@ -97,7 +97,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamOne", { pattern: /^[a-z|\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              className="rounded-lg pl-2"
             />
               
           <label className="w-1/2 mx-1">
@@ -107,7 +107,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamTwo", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              className="rounded-lg pl-2"
             />
           
         </div>
@@ -119,7 +119,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamThree", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              className="rounded-lg pl-2"
             />
           
           <label className="w-1/2 mx-1">
@@ -129,7 +129,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               {...register("teamFour", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              className="rounded-lg pl-2"
             />
           
         </div>
