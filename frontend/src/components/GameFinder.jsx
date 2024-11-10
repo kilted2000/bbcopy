@@ -148,6 +148,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
         </div>
         <button
           type="submit"
+          // add hover state to button
           className="bg-blue-700 w-1/3 self-center cursor-crosshair rounded-full p-1 pt-1 text-stone-100"
         >
           Press If You Dare!
