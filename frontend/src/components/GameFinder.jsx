@@ -75,7 +75,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
   return (
     <div>
     <div style = {{ backgroundImage: "url('../stadium.jpg')"}} className="bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center">
-    <div className="navbar bg-base-300 mt-0 rounded-lg ">
+    <div className="navbar bg-base-300 mt-0 md:rounded-lg ">
         <a className="btn btn-ghost text-xl">Baseball Bucketlist</a>
         <div className="ml-auto">
         <UserButton className="absolute top-0 right-0 mt-4 mx-4 text-sky-500" />
@@ -87,9 +87,12 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
           console.log("Form submission triggered.");
           handleSubmit(onSubmit)(e);
         }}
-        className="rounded-lg bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat p-14 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto"
+        // className="rounded-lg p-4 space-y-4 flex flex-col"
+        //style for modile and add breakpoints from tailwind
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-4 space-y-4"
       >
   <div>
+    <div className="">
           <label className="w-1/2 mr-1">
             Team:
             </label>
@@ -133,6 +136,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
             />
           
         </div>
+        </div>
         <div className="w-full mr-2">
         <label className="mr-5">
           Dates:
@@ -148,8 +152,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
         </div>
         <button
           type="submit"
-          // add hover state to button
-          className="bg-blue-700 w-1/3 self-center cursor-crosshair rounded-full p-1 pt-1 text-stone-100"
+          className="bg-blue-700 hover:bg-blue-900 md:w-1/3 self-center cursor-pointer rounded-full p-1 pt-1 text-stone-100"
         >
           Press If You Dare!
         </button>
