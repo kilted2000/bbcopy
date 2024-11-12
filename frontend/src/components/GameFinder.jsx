@@ -87,13 +87,13 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
           console.log("Form submission triggered.");
           handleSubmit(onSubmit)(e);
         }}
-        // className="rounded-lg p-4 space-y-4 flex flex-col"
+        // className="rounded-lg p-4 space-y-4 flex flex-col p-4"
         //style for modile and add breakpoints from tailwind
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-4 space-y-4"
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-4 space-y-4 flex flex-col"
       >
   <div>
-    <div className="">
-          <label className="w-1/2 mr-1">
+    <div className="flex flex-col justify-self-center">
+          <label className=" ">
             Team:
             </label>
             <input
@@ -103,7 +103,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               className="rounded-lg pl-2"
             />
               
-          <label className="w-1/2 mx-1">
+          <label className=" mx-1">
             Team:
             </label>
             <input
@@ -113,8 +113,8 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               className="rounded-lg pl-2"
             />
           
-        </div>
-        <div>
+        
+        
           <label className="w-1/2 mr-1">
             Team:
             </label>
@@ -134,10 +134,10 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               placeholder="Enter Team Name"
               className="rounded-lg pl-2"
             />
-          
+          {/* pl-2 */}
         </div>
         </div>
-        <div className="w-full mr-2">
+        <div className="flex flex-col justify-self-center mr-2">
         <label className="mr-5">
           Dates:
           </label>
