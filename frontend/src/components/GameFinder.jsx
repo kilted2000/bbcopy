@@ -71,11 +71,12 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
   };
   //"rounded-1g bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat p-9 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4"
 
-  //" bg-no-repeat bg-cover bg-center bg-fixed h-screen content-center"
+  //" bg-no-repeat bg-cover bg-center bg-fixed h-screen content-center "
+  
   return (
     <div>
-    <div style = {{ backgroundImage: "url('../stadium.jpg')"}} className="bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center">
-    <div className="navbar bg-base-300 mt-0 md:rounded-lg ">
+    <div className="bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center w-full">
+    <div className="navbar bg-base-300 mt-0 md:rounded-lg">
         <a className="btn btn-ghost text-xl">Baseball Bucketlist</a>
         <div className="ml-auto">
         <UserButton className="absolute top-0 right-0 mt-4 mx-4 text-sky-500" />
@@ -84,16 +85,16 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
 
       <form
         onSubmit={(e) => {
-          console.log("Form submission triggered.");
           handleSubmit(onSubmit)(e);
         }}
         // className="rounded-lg p-4 space-y-4 flex flex-col p-4"
         //style for modile and add breakpoints from tailwind
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-4 space-y-4 flex flex-col"
+        //consider turning into a daisy card
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-4 space-y-4 flex flex-col w-fit md:rounded-lg md:mt-2 md:w-2/5 md:mx-auto"
       >
   <div>
-    <div className="flex flex-col justify-self-center">
-          <label className=" ">
+    <div className="flex flex-col justify-self-center ">
+          <label className="mr-3">
             Team:
             </label>
             <input
@@ -102,8 +103,8 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               placeholder="Enter Team Name"
               className="rounded-lg pl-2"
             />
-              
-          <label className=" mx-1">
+            
+          <label className=" mx-3">
             Team:
             </label>
             <input
@@ -113,9 +114,9 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               className="rounded-lg pl-2"
             />
           
+          
         
-        
-          <label className="w-1/2 mr-1">
+          <label className=" mr-1">
             Team:
             </label>
             <input
@@ -125,7 +126,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               className="rounded-lg pl-2"
             />
           
-          <label className="w-1/2 mx-1">
+          <label className=" mx-1">
             Team:
             </label>
             <input
@@ -137,7 +138,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
           {/* pl-2 */}
         </div>
         </div>
-        <div className="flex flex-col justify-self-center mr-2">
+        <div className="flex flex-col justify-self-center mr-2 md:w-full">
         <label className="mr-5">
           Dates:
           </label>
