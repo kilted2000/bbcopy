@@ -69,14 +69,14 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
       setIsLoading(false);
     }
   };
-  //"rounded-1g bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat p-9 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4"
-
-  //" bg-no-repeat bg-cover bg-center bg-fixed h-screen content-center "
+  
+  //page-" md:bg-repeat-y md:h-full md:object-cover md:h-dvh bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center 
+    //bg-fixed  min-h-screen flex flex-col justify-center items-center w-full md:bg-repeat-y md:h-full md:object-cover md:h-dvh"
   
   return (
     <div>
-    <div className="bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center w-full">
-    <div className="navbar bg-base-300 mt-0 md:rounded-lg">
+    <div className="bg-[url('/stadium.jpg')] bg-no-repeat">
+    <div className="navbar bg-base-300 mt-0 md:rounded-lg ">
         <a className="btn btn-ghost text-xl">Baseball Bucketlist</a>
         <div className="ml-auto">
         <UserButton className="absolute top-0 right-0 mt-4 mx-4 text-sky-500" />
@@ -87,58 +87,58 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
         onSubmit={(e) => {
           handleSubmit(onSubmit)(e);
         }}
-        // className="rounded-lg p-4 space-y-4 flex flex-col p-4"
-        //style for modile and add breakpoints from tailwind
-        //consider turning into a daisy card
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-4 space-y-4 flex flex-col w-fit md:rounded-lg md:mt-2 md:w-2/5 md:mx-auto"
+    //p-9 gap-4
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 md:rounded-lg"
       >
-  <div>
-    <div className="flex flex-col justify-self-center ">
-          <label className="mr-3">
+  
+    <div>
+      <div>
+          <label className="">
             Team:
             </label>
             <input
               {...register("teamOne", { pattern: /^[a-z|\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg pl-2"
+              className="rounded-lg"
             />
-            
-          <label className=" mx-3">
+           
+          <label className="">
             Team:
             </label>
             <input
               {...register("teamTwo", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg pl-2"
+              className="rounded-lg"
             />
           
-          
-        
-          <label className=" mr-1">
+          </div>
+        <div>
+          <label className="">
             Team:
             </label>
             <input
               {...register("teamThree", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg pl-2"
+              className="rounded-lg"
             />
-          
-          <label className=" mx-1">
+         
+          <label className="">
             Team:
             </label>
             <input
               {...register("teamFour", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg pl-2"
+              className="rounded-lg"
             />
+            </div>
           {/* pl-2 */}
         </div>
-        </div>
-        <div className="flex flex-col justify-self-center mr-2 md:w-full">
+        
+        <div className="flex flex-col justify-self-center">
         <label className="mr-5">
           Dates:
           </label>
