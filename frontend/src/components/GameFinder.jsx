@@ -70,12 +70,11 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
     }
   };
   
-  //page-" md:bg-repeat-y md:h-full md:object-cover md:h-dvh bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center 
-    //bg-fixed  min-h-screen flex flex-col justify-center items-center w-full md:bg-repeat-y md:h-full md:object-cover md:h-dvh"
+  //bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center
   
   return (
     <div>
-    <div className="bg-[url('/stadium.jpg')] bg-no-repeat">
+    <div className="bg-[url('/stadium.jpg')] bg-cover bg-repeat-y  object-cover justify-center items-center flex flex-col h-dvh">
     <div className="navbar bg-base-300 mt-0 md:rounded-lg ">
         <a className="btn btn-ghost text-xl">Baseball Bucketlist</a>
         <div className="ml-auto">
@@ -87,59 +86,66 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
         onSubmit={(e) => {
           handleSubmit(onSubmit)(e);
         }}
-    //p-9 gap-4
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 md:rounded-lg"
+    //bg-no-repeat p-4 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-9 md:rounded-lg space-y-4 flex flex-col gap-4 w-2/5 mx-auto  columns-2"
       >
   
-    <div>
-      <div>
-          <label className="">
+    {/* <div className="mx-auto"> */}
+       <div> 
+        {/* mr-1 */}
+          <label className="w-full mr-1 flex">
             Team:
             </label>
             <input
               {...register("teamOne", { pattern: /^[a-z|\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              // pl-2
+              className="rounded-lg pl-2"
             />
-           
-          <label className="">
+           {/* mx-1 */}
+          <label className="w-full mx-1 flex">
             Team:
             </label>
             <input
               {...register("teamTwo", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              // pl-2
+              className="rounded-lg pl-2"
             />
           
-          </div>
-        <div>
-          <label className="">
+       
+          {/* mr-1 */}
+          <label className="w-1/2 mr-1 flex">
             Team:
             </label>
             <input
               {...register("teamThree", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              //pl-2
+              className="rounded-lg pl-2"
             />
-         
-          <label className="">
+         {/* mx-1 */}
+          <label className="w-1/2 mx-1 flex">
             Team:
             </label>
             <input
               {...register("teamFour", { pattern: /^[a-z\s]+$/i })}
               type="text"
               placeholder="Enter Team Name"
-              className="rounded-lg"
+              //pl-2
+              className="rounded-lg pl-2"
             />
-            </div>
+            {/* </div> */}
+            {/* </div> */}
           {/* pl-2 */}
-        </div>
+        </div> 
         
-        <div className="flex flex-col justify-self-center">
-        <label className="mr-5">
+        {/* <div className="w-full mr-2"> */}
+        {/* mr-5 */}
+        <label className="w-full mx-0.5 mr-2">
           Dates:
           </label>
           <DatePicker
@@ -150,10 +156,10 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               })
             }
           />
-        </div>
+        
         <button
           type="submit"
-          className="bg-blue-700 hover:bg-blue-900 md:w-1/3 self-center cursor-pointer rounded-full p-1 pt-1 text-stone-100"
+          className="bg-blue-700 hover:bg-blue-900 md:w-1/3 self-center cursor-pointer rounded-full p-1 text-stone-100"
         >
           Press If You Dare!
         </button>
