@@ -87,12 +87,13 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
           handleSubmit(onSubmit)(e);
         }}
     //bg-no-repeat p-4 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-9 md:rounded-lg space-y-4 flex flex-col gap-4 w-2/5 mx-auto  columns-2"
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 p-9 md:rounded-lg space-y-4 flex flex-col gap-4 w-2/5 mx-auto  "
       >
   
     {/* <div className="mx-auto"> */}
-       <div> 
+       <div className="grid grid-cols-2 gap-4"> 
         {/* mr-1 */}
+        <div>
           <label className="w-full mr-1 flex">
             Team:
             </label>
@@ -104,7 +105,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               className="rounded-lg pl-2"
             />
            {/* mx-1 */}
-          <label className="w-full mx-1 flex">
+          <label className="w-full ml-1 flex">
             Team:
             </label>
             <input
@@ -114,7 +115,8 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               // pl-2
               className="rounded-lg pl-2"
             />
-          
+          </div>
+          <div>
        
           {/* mr-1 */}
           <label className="w-1/2 mr-1 flex">
@@ -128,7 +130,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               className="rounded-lg pl-2"
             />
          {/* mx-1 */}
-          <label className="w-1/2 mx-1 flex">
+          <label className="w-1/2 ml-1 flex">
             Team:
             </label>
             <input
@@ -138,6 +140,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               //pl-2
               className="rounded-lg pl-2"
             />
+            </div>
             {/* </div> */}
             {/* </div> */}
           {/* pl-2 */}
