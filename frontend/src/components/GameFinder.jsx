@@ -91,7 +91,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
       >
   
     {/* <div className="mx-auto"> */}
-       <div className="grid grid-cols-2 gap-4"> 
+       <div className="grid md:grid-cols-2 md:gap-4"> 
         {/* mr-1 */}
         <div>
           <label className="w-full mr-1 flex">
