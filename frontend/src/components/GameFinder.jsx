@@ -75,7 +75,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
   return (
     <div>
     <div className="bg-[url('/stadium.jpg')] bg-cover bg-repeat-y  object-cover justify-center items-center flex flex-col h-dvh">
-    <div className="navbar bg-base-300 mt-0 md:rounded-lg ">
+    <div className="navbar bg-base-300 mt-0 md:rounded-lg card lg:card-side">
         <a className="btn btn-ghost text-xl">Baseball Bucketlist</a>
         <div className="ml-auto">
         <UserButton className="absolute top-0 right-0 mt-4 mx-4 text-sky-500" />
@@ -87,7 +87,7 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
           handleSubmit(onSubmit)(e);
         }}
     //bg-no-repeat p-4 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 w-full md:p-9 md:rounded-lg space-y-4 flex flex-col grid grid-cols-1 md:gap-4 md:w-2/5 md:mx-auto  "
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 w-full md:p-9 md:rounded-lg space-y-4 flex flex-col grid grid-cols-1 md:gap-4 md:w-2/5 md:mx-auto place-items-center card-body"
       >
   
     {/* <div className="mx-auto"> */}
