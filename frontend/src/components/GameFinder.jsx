@@ -86,8 +86,8 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
         onSubmit={(e) => {
           handleSubmit(onSubmit)(e);
         }}
-    //bg-no-repeat p-4 shadow-2xl shadow-green-900 space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto
-        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900 w-full md:p-9 md:rounded-lg space-y-4 flex flex-col grid grid-cols-1 md:gap-4 md:w-2/5 md:mx-auto place-items-center card-body"
+    //bg-no-repeat p-4 shadow-2xl shadow-green-900 w-full space-y-4 flex flex-col gap-4 m-4 w-2/5 mx-auto md:p-9 md:rounded-lg space-y-4 flex flex-col grid grid-cols-1 md:gap-4 md:w-2/5 md:mx-auto 
+        className=" bg-gradient-to-r from-emerald-700 via-teal-700 to-cyan-600 bg-no-repeat shadow-2xl shadow-green-900  place-items-center card-body"
       >
   
     {/* <div className="mx-auto"> */}
@@ -159,13 +159,14 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
               })
             }
           />
-        
+        <div className="card-actions">
         <button
           type="submit"
           className="bg-blue-700 hover:bg-blue-900 md:w-1/3 self-center cursor-pointer rounded-full p-1 text-stone-100"
         >
           Press If You Dare!
         </button>
+        </div>
       </form>
     </div>
     </div>
