@@ -70,12 +70,12 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
     }
   };
   
-  //bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center
+  //bg-[url('/stadium.jpg')] bg-no-repeat bg-cover bg-center bg-fixed min-h-screen flex flex-col justify-center items-center  md:rounded-lg card lg:card-side
   
   return (
     <div>
     <div className="bg-[url('/stadium.jpg')] bg-cover bg-repeat-y  object-cover justify-center items-center flex flex-col h-dvh">
-    <div className="navbar bg-base-300 mt-0 md:rounded-lg card lg:card-side">
+    <div className="navbar navbar-center bg-base-300 mt-12 md:mt-0">
         <a className="btn btn-ghost text-xl">Baseball Bucketlist</a>
         <div className="ml-auto">
         <UserButton className="absolute top-0 right-0 mt-4 mx-4 text-sky-500" />
@@ -160,9 +160,10 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
             }
           />
         <div className="card-actions">
+        {/* w-1/5 md:w-1/3  */}
         <button
           type="submit"
-          className="bg-blue-700 hover:bg-blue-900 md:w-1/3 self-center cursor-pointer rounded-full p-1 text-stone-100"
+          className=" bg-blue-700 hover:bg-blue-900 self-center cursor-pointer rounded-full text-stone-100 px-3 pb-2"
         >
           Press If You Dare!
         </button>
