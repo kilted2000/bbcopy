@@ -169,4 +169,9 @@ const GameFinder = ({ setIsLoading, setResults, setShowForm }) => {
         </button>
         </div>
       </form>
-   
+    </div>
+    </div>
+  );
+};
+
+export default GameFinder;

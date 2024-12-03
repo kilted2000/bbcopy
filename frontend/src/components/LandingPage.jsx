@@ -19,8 +19,15 @@ const LandingPage = () => {
        
     </div>
     <div className={styles.media}>
+    {/* <h4>As Seen On:</h4> */}
+    <div className="flex flex-row justify-between ml-2">
     <h4>As Seen On:</h4>
-    <p>CNN</p>
+      <img src="bbc.jpeg" alt="bbc logo" />
+      <img src="cnn.jpeg" alt="cnn logo"/>
+      <img src="mlb.png" alt="mlb logo" />
+      <img src="nytimes.png" alt="new york times logo" />
+      <img src="rte.jpeg" alt="rte logo" />
+    </div>
     </div>
     <div className={styles.middle}>
      <h3>How Baseball-Trip Helper works"</h3>
@@ -29,7 +36,8 @@ const LandingPage = () => {
     <div className={styles.footer}>
         <div className={styles.data}>
         <div className={styles.cta}>
-            <p>Sign Up or Sign In Now!</p>
+            <h3>Sign Up or Sign In Now!</h3>
+            <SignInButton />
         </div>
         <a>Facebook</a>
         <a>Twitter</a>
