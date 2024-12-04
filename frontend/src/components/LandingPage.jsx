@@ -29,11 +29,12 @@ const LandingPage = () => {
       <img src="rte.jpeg" alt="rte logo" />
     </div>
     </div>
-    <div className="hero bg-slate-200 h-48 w-screen">
+    <div className="hero bg-slate-200 h-72 w-screen">
       <div className="hero-content">
      <h3>How Baseball-Trip Helper will simplify your life"</h3>
      <p>descricption of app</p>
-     <p>3-4 bright images</p>
+
+
      </div>
      </div>
     <div className={styles.footer}>
