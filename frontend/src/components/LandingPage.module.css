@@ -38,6 +38,6 @@ h2{
 }
 .cta{
     background-color: lightslategrey;
-    height: 200px;
-    width: 1800px;
+    /* height: 200px;
+    width: auto; */
 }
