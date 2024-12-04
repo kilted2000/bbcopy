@@ -29,10 +29,11 @@ const LandingPage = () => {
       <img src="rte.jpeg" alt="rte logo" />
     </div>
     </div>
-    <div className={styles.middle}>
-     <h3>How Baseball-Trip Helper works"</h3>
-     <p>Lorem Ipsom I love a parade. tihjchshfjhfkfsfsfbjkjhkjhklblbclbblkjbcbjbhbjbkjbbjbjbbjbljbj</p>
-    </div>
+    <div>
+     <h3>How Baseball-Trip Helper will simplify your life"</h3>
+     <p>descricption of app</p>
+     <p>3-4 bright images</p>
+     </div>
     <div className={styles.footer}>
         <div className={styles.data}>
           <div className="hero bg-slate-700 h-48 w-screen">
