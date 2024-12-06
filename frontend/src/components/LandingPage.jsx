@@ -32,8 +32,12 @@ const LandingPage = () => {
     <div className="hero bg-slate-200 h-72 w-screen">
       <div className="hero-content">
      <h3>How Baseball-Trip Helper will simplify your life"</h3>
-     <p>descricption of app</p>
-
+     <p>Enter up to four teams to see their schedules. Baseball Roadtrip Helper brings every teams schedules together in one place?</p>
+<img src="cards.svg" alt="Cardinals Logo" />
+<img src="phillies.svg" alt="Phillies Logo" />
+<img src="cubs.svg" alt="Cubs Logo" />
+<img src="braves.svg" alt="Braves Logo" />
+<img src="mariners.svg" alt="Mariners Logo" />
 
      </div>
      </div>
